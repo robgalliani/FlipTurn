@@ -9,7 +9,7 @@
 </head> 
 <body> 
 
-<div data-role="page">
+<div data-role="page" id="home">
 
 	<div data-role="header">
 		<h1>FlipTurn Industries</h1>
@@ -21,11 +21,35 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">		
-		<div data-role="navbar">
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
 		<ul>
-			<li><a href="#">One</a></li>
-			<li><a href="#">Two</a></li>
-			<li><a href="#">Three</a></li>
+			<li><a href="#page_myfeed" class="ui-state-persist">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="page_myfeed">
+
+	<div data-role="header">
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<h1>Your Feed</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<br><br>
+		<p style="float:middle;">Willie Wildcat   57:09 100 FREE</p>		
+	</div><!-- /content -->
+
+	<div data-role="footer">		
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
+		<ul>
+			<li><a href="#page_myfeed" class="ui-btn-active ui-state-persist">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
 		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
