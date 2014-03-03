@@ -4,46 +4,14 @@
 <head>
 	<!-- The title shows up in the browser toolbar -->
 	<title>Follow-up</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+
 </head>
 
 <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
 
-<script>
-    $(document).ready(function() {
-
-      /* Your code goes here */
-
-      // Step 1: Select the Change! button using the ID Selector.
-      var button = $("#submit");
-   
-      // Step 2: Add the click listener to the button.
-      $(button).click(function() {
-
-        // Select 3: Select the input and store its value.
-        var emailtxt = $("#email").val();
-
-        if (emailtxt=="" || emailtxt.indexOf('@')==-1) {
-        	alert("Email address cannot be empty or wrong format!");
-        		$("#email").text("");
-        	 
-        };
-
-        // Step 3: Use selectors to find the element to replace the text.
-        var pwd = $("#password").val();
-        var repwd = $("#repassword").val();
-
-        if (pwd!=repwd) {
-        	alert("You enter the password twice inconsistency!");
-        	$("#password").text("");
-        	$("#repassword").text("");
-        };
-
-       
-
-      });   
-
-    });
-    </script>
+<script src="index.js"></script>
 
 <body>
 	<div id="background" class="background">
@@ -74,78 +42,5 @@
 </div>
 
 
-	<style>
-		/* body tag selector: define a default font. Never use Comic Sans. */
-		body {
-			font-family: "Comic Sans MS";
-		}
-
-		.section {
-			font-family: arial;
-		}
-
-		.section h2 {
-			background-color: rgb(255,255,220);
-			font-family: Georgia;
-			color: maroon;
-		}
-
-		.background {
-			height: 500px;
-			width: 350px;
-
-			background-color: lightblue;
-			border: 1.5px solid rgb(121,121,121);
-        	border-radius: 10px;
-		}
-
-		.text {
-			height: 6px;
-
-			font-size: 20px;
-			font-weight: bolder;
-
-			margin-top: 5px;
-			margin-left: 10px; 
-		}
-
-		.pwd {
-			height: 6px;
-
-			font-size: 20px;
-			font-weight: bolder;
-
-			margin-top: 5px;
-			margin-left: 10px; 
-		}
-
-		.input {
-			height: 25px;
-			width: 320px;
-
-			border: 1.5px;
-			border-radius: 5px;
-			margin: 0px 0px 0px 10px;
-		}
-
-		.submit {
-			height: 40px;
-			width: 300px;
-
-			border: 1.5px solid rgb(121,121,121);
-			border-radius: 5px;
-			margin: 0px 0px 0px 23px;
-			background-color: lightyellow;
-
-			font-size: 20px;
-			font-weight: bolder;
-		}
-
-		.submit:active {
-        border: 5px solid rgb(155,155,155);
-    }
-
-
-	</style>
 </body>
 </html>

@@ -12,6 +12,10 @@
 		background-color: blue;
 	}
 	</style>
+
+
+	<script src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head> 
 <body> 
 
@@ -88,10 +92,54 @@
 	<img style="width:100%; align:center" src="/Users/MatthewSchley/Documents/EECS/EECS_330/willie.png">
 	</div>
 	<div style="padding-bottom:10px;">
-		<button>FOLLOW</button>
+		<a href="#signup_page"><button>FOLLOW</button></a>
 		<button>INFO</button>
 		<button >RIVALS</button>
 		
+	</div>
+	</div><!-- /content -->
+
+	<div data-role="footer">		
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
+		<ul>
+			<li><a href="#page_myfeed">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<!-- SIGN UP PAGE -->
+<div data-role="page" id="signup_page">
+	<div id="background" class="background">
+
+	<div data-role="header">
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<h1>Sign Up</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div class="section" id="info">
+		<h2>Sign Up for FlipTurn Today!</h2>
+
+		<div class="text" id="txt1">Email(*):</div><br>
+		<input id="email" type="text" class="input"><br>
+		<div class="text" id="txt2">Phone Number:</div><br>
+		<input id="phone" type="text" class="input"><br>
+		<div class="pwd" id="txt3">Password:</div><br>
+		<input id="password" type="password" class="input"><br>
+		<div class="pwd" id="txt4">Retype Password:</div><br>
+		<input id="repassword" type="password" class="input"><br>
+		<br>
+
+		<input id="push" type="checkbox" value="Yes" checked="checkec" style="margin-left:10px">Yes, I'd like to have meet results sent directly to my phone for the swimmers I "follow."</input>
+		<!--div id="push">Would you like meet results for this swimmer sent directly to your phone?</div-->
+		
+		<br><br>
+	  	<input class="submit" type="button" id="submit" value="Submit" />
+
 	</div>
 	</div><!-- /content -->
 
