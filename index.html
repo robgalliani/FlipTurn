@@ -1,11 +1,17 @@
 <!DOCTYPE html> 
-<html> 
+<html> q
 	<head> 
 	<title>My Page</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+	<style>
+	.ui-page {
+		background-color: blue;
+	}
+	</style>
 </head> 
 <body> 
 
@@ -17,7 +23,7 @@
 
 	<div style="padding-top:10%;padding-bottom:30%;" data-role="content">	
 		<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search The Swim World..." data-inset="true">
-			<li><a href="#">Willie Wildcat</a></li>
+			<li><a href="#page_profile">Willie Wildcat</a></li>
 			<li><a href="#">Wild McJohnson</a></li>
 		</ul>
 
@@ -35,6 +41,7 @@
 
 </div><!-- /page -->
 
+<!-- MY FEED -->
 <div data-role="page" id="page_myfeed">
 
 	<div data-role="header">
@@ -42,10 +49,14 @@
 		<h1>Your Feed</h1>
 	</div><!-- /header -->
 
-	<div data-role="content">	
+	<div style="margin-bottom:50px;" data-role="content">	
 		<br><br>
-		<ul data-role="listview" data-inset="true">
+		<ul data-role="listview">
 			<li>Willie Wildcat 57:09 100 FREE</li>
+			<li>Michael Phillips 23:47 50 FREE</li>
+			<li>Abraham Lincoln 1:57:09 200 IM</li>
+			<li>Bruno Mars 2:03:27 200 BACK</li>
+			<li>Joseph Biden 14:47:39 1500 FREE</li>
 		</ul>		
 	</div><!-- /content -->
 
@@ -53,6 +64,31 @@
 		<div data-role="navbar" data-id="main_nav" data-position="fixed">
 		<ul>
 			<li><a href="#page_myfeed" class="ui-btn-active ui-state-persist">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<!-- PROFILE PAGE -->
+<div data-role="page" id="page_profile">
+
+	<div data-role="header">
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
+		<h1>Willie Wildcat</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<br><br>
+		PIC	
+	</div><!-- /content -->
+
+	<div data-role="footer">		
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
+		<ul>
+			<li><a href="#page_myfeed">My Feed</a></li>
 			<li><a href="#">Recent Results</a></li>
 			<li><a href="#">Team Standings</a></li>
 		</ul>
