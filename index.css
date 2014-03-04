@@ -8,13 +8,11 @@
 		}
 
 		.section h2 {
-			background-color: rgb(255,255,220);
 			font-family: Georgia;
 			color: maroon;
 		}
 
 		.background {
-
 			background-color: lightblue;
 			border: 1.5px solid rgb(121,121,121);
         	border-radius: 10px;
@@ -27,7 +25,6 @@
 			font-weight: bolder;
 
 			margin-top: 5px;
-			margin-left: 10px; 
 		}
 
 		.pwd {
@@ -36,8 +33,7 @@
 			font-size: 20px;
 			font-weight: bolder;
 
-			margin-top: 5px;
-			margin-left: 10px; 
+			margin-top: 5px; 
 		}
 
 		.input {
@@ -46,7 +42,6 @@
 
 			border: 1.5px;
 			border-radius: 5px;
-			margin: 0px 0px 0px 10px;
 		}
 
 		.submit {
@@ -55,7 +50,6 @@
 
 			border: 1.5px solid rgb(121,121,121);
 			border-radius: 5px;
-			margin: 0px 0px 0px 23px;
 			background-color: lightyellow;
 
 			font-size: 20px;
