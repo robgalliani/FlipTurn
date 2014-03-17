@@ -18,14 +18,14 @@
 </head> 
 <body> 
 
-<!-- SPLASH PAGE -->
 <div data-role="page" id="home">
-	<!--
+
 	<div data-role="header" class="ui-bar-b">
-		<h1>Flipturn</h1>
-	</div>< /header -->
-	<h1 id="h1" style="text-align:center;">Flipturn</h1>
-	<div style="padding-top:10%;padding-bottom:30%;" data-role="content">	
+		<h1>FlipTurn</h1>
+	</div><!-- /header -->
+
+	<div style="padding-top:10%;padding-bottom:30%;" data-role="content">
+
 		<ul style="background:white;" data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search The Swim World..." data-inset="true">
 			<li><a href="#page_profile">Willie Wildcat</a></li>
 			<li><a href="#">Wild McJohnson</a></li>
@@ -41,7 +41,6 @@
 			<li><a href="#">Ricky Gonzalez</a></li>
 		</ul>
 
-		<br><br>
 		<div style="color:white; text-align:center; font: 'Times New Roman', sans-serif; font-weight:100;">
 			"FlipTurn is revolutionizing the way you follow Big 10 swimming"
 			<br>
@@ -50,11 +49,11 @@
 	</div><!-- /content -->
 
 	<div data-role="footer" data-position="fixed">		
-		<div data-role="navbar" data-id="main_nav">
+		<div data-role="navbar" data-id="main_nav" data-position="fixed">
 		<ul>
-			<li><a href="#page_myfeed">My Feed</a></li>
-			<li><a href="#">Results</a></li>
-			<li><a href="#">Teams</a></li>
+			<li><a href="#page_myfeed" class="ui-state-persist">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
 		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
@@ -65,7 +64,7 @@
 <div data-role="page" id="page_myfeed">
 
 	<div data-role="header">
-		<a href="#hom" data-rel="back" data-icon="back">Back</a>
+		<a href="#home" data-rel="back" data-icon="back">Back</a>
 		<h1>Your Feed</h1>
 		<a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
 	</div><!-- /header -->
@@ -85,8 +84,8 @@
 		<div data-role="navbar" data-id="main_nav" data-position="fixed">
 		<ul>
 			<li><a href="#page_myfeed" class="ui-btn-active ui-state-persist">My Feed</a></li>
-			<li><a href="#">Results</a></li>
-			<li><a href="#">Teams</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
 		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
@@ -103,12 +102,14 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<h1 style="text-align:center">Willie Wildcat</h1>
-		<img style="width:150px; float:left; border:1px solid black; margin-right:10px;" src="willie.jpg">
 		
-		<br><b>Height:</b> 6' 3''
-		<br><b>Weight:</b> 170 lbs
-		<br><b>Hometown:</b> Evanston, IL
+			<h1 style="text-align:center">Willie Wildcat</h1></div>
+			<img style="width:150px; float:left; border:1px solid black; margin-right:10px;" src="willie.jpg">
+			
+			<br><b>Height:</b> 6' 3''
+			<br><b>Weight:</b> 170 lbs
+			<br><b>Hometown:</b> Evanston, IL
+		
 		<br>
 		<div style="width:70%;">
 			<br>
@@ -142,24 +143,22 @@
 
 			</table>
 		</div>
-	
-		<br>
+
 		<div style="padding-bottom:10px;">
-			<!--<a href="#signup_page" data-role="button" data-mini="true" data-inline="true">FOLLOW</a>-->
-			<a href="#signup_page"><button data-mini="true" data-inline="true">FOLLOW</button></a>
-			<a data-role="button" data-mini="true" data-inline="true">INFO</a>
-			<a data-role="button" data-mini="true" data-inline="true">RIVALS</a>
-			
-		</div>
+		<a href="#signup_page"><button data-mini="true" data-inline="true">FOLLOW</button></a>
+		<button data-mini="true" data-inline="true">INFO</button>
+		<button data-mini="true" data-inline="true">RIVALS</button>
+		
+	</div>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar" data-id="main_nav" data-position="fixed">
-			<ul>
-				<li><a href="#page_myfeed">My Feed</a></li>
-				<li><a href="#">Results</a></li>
-				<li><a href="#">Teams</a></li>
-			</ul>
+		<ul>
+			<li><a href="#page_myfeed">My Feed</a></li>
+			<li><a href="#">Recent Results</a></li>
+			<li><a href="#">Team Standings</a></li>
+		</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
 
